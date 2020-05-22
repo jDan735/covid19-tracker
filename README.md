@@ -1,20 +1,19 @@
-# 👑 COVID19 tracker
-Этот пакет добавляет в python api https://data.nepalcorona.info/api
-## 🚀 Установка
-Скачать covid19.py, разместить в папке с Вашим проектом и импортировать его:
+# 🦠 COVID19 tracker
+## 🚀 Install
+Download covid19.py, place in project folder and import:
 ```python
 import sys
 sys.path.insert(0, path)
 import covid19
 ```
-## 🤖 Функции
+## 🤖 Functions
 ### 🌎 getWorld
-Присылает распарсенный json c сайта https://data.nepalcorona.ino/api/v1/world
-#### 📥 Ввод
+Send parsed json from https://data.nepalcorona.ino/api/v1/world
+#### 📥 Input
 ```python
 covid19.getWorld()
 ```
-#### 📤 Вывод
+#### 📤 Output
 ```json
 {
     "updated": 1590040302542,
@@ -37,12 +36,12 @@ covid19.getWorld()
 }
 ```
 ### 🗺 getCountries
-Присылает распарсенный json c сайта https://nepalcorona.info/api/v1/data/world
-#### 📥 Ввод
+Send parsed json from https://nepalcorona.info/api/v1/data/world
+#### 📥 Input
 ```python
 covid19.getCountries()
 ```
-#### 📤 Вывод
+#### 📤 Output
 ```json
 [{
     "_id": "5ec618e5878b4a2adea22577",
