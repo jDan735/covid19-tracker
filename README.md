@@ -1,11 +1,23 @@
 # 🦠 COVID19 tracker
-## 🚀 Install
+## 🧑‍💻 Installation
 Download covid19.py, place in project folder and import:
 ```python
 import sys
 sys.path.insert(0, path)
 import covid19
 ```
+## 🚀 Start
+To start, run this code:
+```
+python covid19.py
+```
+### ⚙️ Options
+#### world
+Print `getWorld()` in your terminal
+#### country
+Print `getCountries()` in your terminal
+#### api
+Enable new api
 ## 🤖 Functions
 ### 🌎 getWorld
 Send parsed json from https://data.nepalcorona.info/api/v1/world
