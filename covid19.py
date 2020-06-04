@@ -111,11 +111,13 @@ def getCountries(myApi=False, moreData=True):
 if __name__ == "__main__":
 
     import argparse
+    import json
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-w", "--world", action="store_true")
-    parser.add_argument("-c", "--country", action="store_true")
-    parser.add_argument("-a", "--api", action="store_true")
+    with open("./menu.json") as file:
+        menu = json.loads(file.read())
+        for item in menu:
+            parser.add_argument(item[0], item[1], action=item[2], help=item[3])
 
     args = parser.parse_args()
 
