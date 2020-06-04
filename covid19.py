@@ -122,7 +122,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.world:
-        print(getWorld(args.api))
+        print(str(getWorld(args.api)).replace("'", "\""))
 
     if args.country:
-        print(getCountries(args.api))
+        print(str(getCountries(args.api)).replace("'", "\""))
