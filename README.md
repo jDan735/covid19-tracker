@@ -8,8 +8,8 @@ import covid19
 ```
 ## 🚀 Start
 To start, run this code:
-```bash
-python covid19.py [-h] [-w] [-c] [-a]
+```
+python covid19.py
 ```
 ### ⚙️ Options
 #### `world`
