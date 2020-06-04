@@ -108,4 +108,19 @@ def getCountries(myApi=False, moreData=True):
     else:
         return request
 
-print(getCountries(True))
+if __name__ == "__main__":
+
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-w", "--world", action="store_true")
+    parser.add_argument("-c", "--country", action="store_true")
+    parser.add_argument("-a", "--api", action="store_true")
+
+    args = parser.parse_args()
+
+    if args.world:
+        print(getWorld(True if args.api else False))
+
+    if args.country:
+        print(getCountries(True if args.api else False))
