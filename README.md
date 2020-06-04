@@ -12,11 +12,11 @@ To start, run this code:
 python covid19.py
 ```
 ### ⚙️ Options
-#### world
-Print `getWorld()` in your terminal
-#### country
-Print `getCountries()` in your terminal
-#### api
+#### `world`
+Print world stats in your terminal
+#### `country`
+Print countries stats in your terminal
+#### `api`
 Enable new api
 ## 🤖 Functions
 ### 🌎 getWorld
