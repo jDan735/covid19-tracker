@@ -1,0 +1,31 @@
+countries: 215
+population: 2212121244
+updated: 1123243435     # What is it?
+
+cases:
+    all: 11212121
+    new: 500            # Per one million
+    stats: 22811
+
+deaths:
+    all: 1344222
+    new: 33344
+    stats: 121212       # Per one million
+
+recovered:
+    all: 1344222
+    new: 33344
+    stats: 121212       # Per one million
+
+active:
+    all: 3011002
+    new: 500            # cases.new
+    stats: 38484        # Per one million
+    critical:
+        all: 54202
+        new: 0          # no data
+
+tests:
+    all: 13930293
+    new: 0              # no data
+    stats: 12121
