@@ -8,7 +8,7 @@ import covid19
 ```
 ## 🤖 Functions
 ### 🌎 getWorld
-Send parsed json from https://data.nepalcorona.ino/api/v1/world
+Send parsed json from https://data.nepalcorona.info/api/v1/world
 #### 📥 Input
 ```python
 covid19.getWorld()
