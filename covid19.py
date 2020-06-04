@@ -120,7 +120,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.world:
-        print(getWorld(True if args.api else False))
+        print(getWorld(args.api))
 
     if args.country:
-        print(getCountries(True if args.api else False))
+        print(getCountries(args.api))
