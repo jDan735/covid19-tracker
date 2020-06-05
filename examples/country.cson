@@ -1,0 +1,44 @@
+updated: "2020-06-04T08:37:43.846Z"
+
+country:
+	name: "Russia"
+	flag: "https://disease.sh/assets/img/flags/ru.png"
+    
+	codes:
+		iso2: "RU"
+		iso3: "RUS"
+
+	location:
+		continent: "Europe"
+		lat: 60
+		long: 100
+
+cases:
+	all: 1
+	new: 1
+	stats: 1
+
+deaths:
+	all: 1
+	new: 1
+	stats: 1
+
+recovered:
+	all: 1
+	new: 1
+	stats: 1
+
+active:
+	all: 1
+	new: 1
+	stats: 1
+
+	critical:
+		all: 1
+		new: 0
+		stats: 0
+
+tests:
+	all: 1
+	new: 0
+	stats: 1
