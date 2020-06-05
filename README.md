@@ -80,8 +80,8 @@ active:
   stats: 0
   critical:
     all: 17083
-	new: 0
-	stats: 0
+    new: 0
+    stats: 0
 tests:
   all: 19568069
   new: 0
@@ -91,10 +91,9 @@ country:
   flag: "https://disease.sh/assets/img/flags/us.png"
   codes:
     iso2: "US"
-	iso3: "USA"
-	location:
-	  continent: "North America"
-	  lat: 38
-	  long: -97
-
+    iso3: "USA"
+    location:
+      continent: "North America"
+      lat: 38
+      long: -97
 ```
