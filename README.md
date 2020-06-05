@@ -25,27 +25,35 @@ Send parsed json from https://data.nepalcorona.info/api/v1/world
 ```python
 covid19.getWorld()
 ```
-#### 📤 Output
-```json
-{
-    "updated": 1590040302542,
-    "cases": 5090157,
-    "todayCases": 6746,
-    "deaths": 329739,
-    "todayDeaths": 500,
-    "recovered": 2024329,
-    "active": 2736089,
-    "critical": 45796,
-    "casesPerOneMillion": 653,
-    "deathsPerOneMillion": 42.3,
-    "tests": 65816543,
-    "testsPerOneMillion": 8493.37,
-    "population": 7749165314,
-    "activePerOneMillion": 353.08,
-    "recoveredPerOneMillion": 261.23,
-    "criticalPerOneMillion": 5.91,
-    "affectedCountries": 215
-}
+#### 📤 Output `cson`
+```cson
+countries: 215
+population: 7752910421
+updated: 1591356479526
+cases:
+  all: 6727231
+  new: 34537
+  stats: 863
+deaths:
+  all: 393617
+  new: 1319
+  stats: 50.5
+recovered:
+  all: 3269829
+  new: 27718
+  stats: 421.76
+active:
+  all: 3063785
+  new: 34537
+  stats: 395.18
+  critical:
+    all: 55463
+    new: 0
+    stats: 7.15
+tests:
+  all: 92588077
+  new: 0
+  stats: 11942.36
 ```
 ### 🗺 getCountries
 Send parsed json from https://nepalcorona.info/api/v1/data/world
@@ -53,33 +61,39 @@ Send parsed json from https://nepalcorona.info/api/v1/data/world
 ```python
 covid19.getCountries()
 ```
-#### 📤 Output
-```json
-[{
-    "_id": "5ec618e5878b4a2adea22577",
-    "country": "USA",
-    "countryCode": "US",
-    "totalCases": 1593039,
-    "newCases": 316,
-    "totalDeaths": 94941,
-    "newDeaths": 5,
-    "activeCases": 1127286,
-    "totalRecovered": 370812,
-    "criticalCases": 17815,
-    "casesPerOneMillion": 4816,
-    "deathsPerOneMillion": 287,
-    "tests": 14173807,
-    "testsPerOneMillion": 42849,
-    "continent": "North America",
-    "countryInfo": {
-        "_id": 840,
-        "iso2": "US",
-        "iso3": "USA",
-        "lat": 38,
-        "long": -97,
-        "flag": "https://disease.sh/assets/img/flags/us.png"
-    },
-    "updated": "2020-05-21T05:51:42.546Z",
-    "__v": 0
-}]
+#### 📤 Output `cson`
+```cson
+updated: "2020-06-05T11:27:59.529Z"
+cases:
+  all: 1924428
+  new: 377
+  stats: 5816
+deaths:
+  all: 110180
+  new: 7
+  stats: 333
+recovered:
+  all: 712252
+active:
+  all: 1101996
+  new: 377
+  stats: 0
+  critical:
+    all: 17083
+    new: 0
+    stats: 0
+tests:
+  all: 19568069
+  new: 0
+  stats: 59142
+country:
+  name: "USA"
+  flag: "https://disease.sh/assets/img/flags/us.png"
+  codes:
+    iso2: "US"
+    iso3: "USA"
+    location:
+      continent: "North America"
+      lat: 38
+      long: -97
 ```
