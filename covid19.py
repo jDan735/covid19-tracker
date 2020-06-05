@@ -46,7 +46,7 @@ def getWorld(myApi=False):
     else:
         return request
 
-def getCountries(myApi=False, moreData=True):
+def getCountries(myApi=False):
     request = requests.get("https://nepalcorona.info/api/v1/data/world").json()
     if myApi:
         json = []
@@ -117,12 +117,19 @@ if __name__ == "__main__":
     with open("./menu.json") as file:
         menu = json.loads(file.read())
         for item in menu:
-            parser.add_argument(item[0], item[1], action=item[2], help=item[3])
+            if item[2] == "bool":
+                parser.add_argument(item[0], item[1], action="store_true", help=item[3])
+            elif item[2] == "string":
+                parser.add_argument(item[0], item[1], help=item[3])
 
     args = parser.parse_args()
 
     if args.world:
         print(str(getWorld(args.api)).replace("'", "\""))
 
-    if args.country:
+    elif args.country:
         print(str(getCountries(args.api)).replace("'", "\""))
+
+    elif args.place != "":
+        print(args.place)
+        print(str(getCountries(args.api)[int(args.place)]).replace("'", "\""))

@@ -18,6 +18,13 @@ Print world stats in your terminal
 Print countries stats in your terminal
 #### `api`
 Enable new api
+#### `place`
+Print place stats in your terminal
+##### ⚙️ Options
+- Number of country
+- [PLANED] [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) code
+- [PLANED] [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3#Officially_assigned_code_elements) code
+
 ## 🤖 Functions
 ### 🌎 getWorld
 Send parsed json from https://data.nepalcorona.info/api/v1/world

@@ -1,5 +1,6 @@
 [
-    ["-w", "--world", "store_true", "show world stats"],
-    ["-c", "--country", "store_true", "show countries stats"],
-    ["-a", "--api", "store_true", "enable new api"]
+    ["-w", "--world", "bool", "show world stats"],
+    ["-c", "--country", "bool", "show countries stats"],
+    ["-p", "--place", "string", "show place stats"],
+    ["-a", "--api", "bool", "enable new api"]
 ]
