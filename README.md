@@ -47,9 +47,9 @@ active:
   new: 34537
   stats: 395.18
   critical:
-	all: 55463
-	new: 0
-	stats: 7.15
+    all: 55463
+    new: 0
+    stats: 7.15
 tests:
   all: 92588077
   new: 0
