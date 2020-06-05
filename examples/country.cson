@@ -1,44 +1,33 @@
-updated: "2020-06-04T08:37:43.846Z"
-
-country:
-	name: "Russia"
-	flag: "https://disease.sh/assets/img/flags/ru.png"
-    
-	codes:
-		iso2: "RU"
-		iso3: "RUS"
-
-	location:
-		continent: "Europe"
-		lat: 60
-		long: 100
-
+updated: "2020-06-05T11:27:59.529Z"
 cases:
-	all: 1
-	new: 1
-	stats: 1
-
+	all: 1924428
+	new: 377
+	stats: 5816
 deaths:
-	all: 1
-	new: 1
-	stats: 1
-
+	all: 110180
+	new: 7
+	stats: 333
 recovered:
-	all: 1
-	new: 1
-	stats: 1
-
+	all: 712252
 active:
-	all: 1
-	new: 1
-	stats: 1
-
+	all: 1101996
+	new: 377
+	stats: 0
 	critical:
-		all: 1
+		all: 17083
 		new: 0
 		stats: 0
-
 tests:
-	all: 1
+	all: 19568069
 	new: 0
-	stats: 1
+	stats: 59142
+country:
+	name: "USA"
+	flag: "https://disease.sh/assets/img/flags/us.png"
+	codes:
+		iso2: "US"
+		iso3: "USA"
+	location:
+		continent: "North America"
+		lat: 38
+		long: -97
